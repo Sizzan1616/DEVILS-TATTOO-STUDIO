@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+#a{
+    background-color: black;
+    background-size: 1900px;
+    padding:30px;
+    
+}
+nav a{
+    text-decoration: none;
+}
+#e{
+    color: beige;
+    background-color: black;
+}
+
+#done{
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+    color: rgb(45,99,78);
+    
+
+}
+       #b{
+        padding:10px;
+        background:white;
+        margin-top:20px;
+        width:30%;
+        margin-left:30%;
+        text-align:center;
+        display:none;
+       }
+       #f{
+          display:none;
+          color:antiquewhite;
+       }
+       #g{
+           display:none;
+           color:antiquewhite;
+       }
+       #bo{
+        border-style:double;
+        color:brown;
+        width: 40%;
+        background-color:bisque;
+       }
+       #se{
+        color:black;
+       }
+       #web{
+        -webkit-text-stroke:chocolate;
+       }
+       #au{
+      
+        color: antiquewhite;
+       padding: 20px;
+       padding-left:750px;
+       margin-top:15px;
+        font-size:26px;
+        font-family: 'Times New Roman', Times, serif;
+        
+    }
+    #div{
+        text-decoration: none;
+        color: antiquewhite;
+        
+    }
+       
+    </style>
+</head>
+
+<body id="a">
+    <div id="div">
+        <img  style="height: 70px; width: auto;" src="https://www.tattoosnewdelhi.com/images/devilz-tattooz-logo.jpg" alt="logo - tattoos by devilz tattooz">
+<nav id="au"style="background-color:black;">
+    <a href="homepage.html"style="color: white; ">Home</a>&nbsp;&nbsp;
+    <a href="tatoo design.html"style="color: white;">Tattoo Designs</a>&nbsp;&nbsp;
+    <a href="pro(sumit).html"style="color: white;">Tatto Artists</a>&nbsp;&nbsp;
+    <a href="sizan.html" style="color:white">Contact Us</a>&nbsp;&nbsp;
+
+</nav>
+    </div>
+<div>
+        <div id="web">
+         <h1 style="color: antiquewhite;;font-family:Arial, Helvetica, sans-serif;">CONTACT US - DEVIL'S TATTOO STUDIO </h1>
+        </div>
+         <br>
+        <center>
+            <div id="bo">
+        <div id="login"style="color:rgb(45,99,78);;font-family:Arial, Helvetica, sans-serif;"><h2>Book Appointment</h2></div><br>
+        <div id="done" style="display:none;">
+            Username:<input type="text" id="c" placeholder="Enter Your Username" required><Br><br>
+            Passsword:<input type="password" id="d" placeholder="Enter Your Password" required><Br><br>
+               Email:<input type="email"id="em"placeholder="Enter your email"required><br><br>
+               <select id="se">
+                <option value="--Select Studio--">--Select Studio--</option>
+                <option value="South Delhi">South Delhi</option>
+                <option value="Gurgaon/Gurugram, Haryana">Gurgaon/Gurugram, Haryana</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+               </select><br><br>
+               <input type="submit" id="e" value="Book Your Tattoo" onclick="abc()">
+               <Br><br>
+               <p id="f">Please insert the correct username </p>
+               <p id="g">Please insert the correct password </p>
+                
+        </div>   
+  </div>
+</center>
+  </div>
+        <h2 style="color: antiquewhite;;font-family:Arial, Helvetica, sans-serif">South Delhi</h2>
+        <h3 style="color:lavender;font-family:Arial, Helvetica, sans-serif">Address: M-37, 2nd Floor (Above CCD), G.K-1, New Delhi 110048<br>
+         Phone: +9111-46793301, +91-9876542385<br>
+        <u><a href="mailto:info@tattoosnewdelhi.com"style="color:lavender;">Email: info@tattoosnewdelhi.com</h3></a></u>
+        <br>
+        <h2 style="color: antiquewhite;;font-family:Arial, Helvetica, sans-serif">Ahmedabad</h2>
+        <h3 style="color: lavender;font-family:Arial, Helvetica, sans-serif">Address: A-20, 1st floor, Near Abhishek Complex,Opp Berampura Circle,Bopal AHD-380055<br> 
+         Phone:+9111-46791101, +91-9876542905<br>
+         <u><a href="https://workspace.google.com/intl/en-US/gmail/"style="color:lavender;">Email: info@tattoosnewdelhi.com</a></u>
+     <h2 style="color: antiquewhite;;font-family:Arial, Helvetica, sans-serif">Gurgaon/Gurugram, Haryana</h2>
+     <h3 style="color: lavender;font-family:Arial, Helvetica, sans-serif">Address: Shop# 119, 1st floor, Galleria, DLF-IV, Gurugram 122002, Haryana<br>
+        Phone: +91124-4308774, +91-9810395801<br>
+        <u><a href="https://workspace.google.com/intl/en-US/gmail/"style="color:lavender;">Email: info@tattoosnewdelhi.com</a></u>
+     </h3>
+  <h2 style="color: antiquewhite;;font-family:Arial, Helvetica, sans-serif">Luxembourg</h2>
+  <h3 style="color: lavender;font-family:Arial, Helvetica, sans-serif">Address: 142, Boulevard De La Petrusse, 2330, Luxembourg
+Phone: +352661845599<br>
+<u><a href="https://workspace.google.com/intl/en-US/gmail/"style="color:lavender;">Email: info@tattoosnewdelhi.com</a></u>
+</h3>
+    </div>
+    
+    <script>
+       
+$(document).ready(function(){
+$("#login").click(function(){
+$("#done").slideToggle(4000)
+});
+});
+
+function abc(){
+let a = document.getElementById("c").value;
+let b = document.getElementById("d").value;
+let c = /(?=.*[1-9])(?=.*[A-Z])(?=.*[!@#$%^&*()%])/
+$("#f").hide()
+$("#g").hide()
+if(!c.test(a)){
+   $("#f").show();
+  }
+else if(!c.test(b)){
+    $("#g").show();
+  }else{
+    alert("Appointment sucessfully Booked")
+  
+  }
+
+};
+
+    </script>
+    <center>
+    <footer style="color: antiquewhite;;font-family:Arial, Helvetica, sans-serif;"><h3>Copyright &copy; 2023. All Rights Reserved.DEVIL'S Tattoo Studio </h3></footer>
+    </center>
+</body>
+</html>
